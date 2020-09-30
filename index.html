@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <!-- saved from url=(0057)https://www.17sucai.com/preview/1/2017-10-09/ok/demo.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+
+<head>
+<link rel="shortcut icon" href="./favicon.ico" />
+<link rel="bookmark"href="./favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>Hey! cool gril WT</title>
 
@@ -171,8 +176,8 @@ class Sound{
     this.stop = true;
     this.sp.classList.remove("jump");
     //this.sp.style.animationDuration = `${this.speed}s`;
-    // if(this.index < sounds.length-1){sounds[this.index+1].play();}
-    // if(this.index == sounds.length-1){flag = false;}
+     if(this.index < sounds.length-1){sounds[this.index+1].play();}
+     if(this.index == sounds.length-1){flag = false;}
   }
   
   play(){
@@ -210,6 +215,7 @@ for(let i=0; i < notes.length; i++){
 
 // EVENTS
 wishes.addEventListener("click",function(e){
+	console.log('asdasd');
   if(e.target.id != "inputSpeed" && !flag){
   sounds[0].play();
   flag = true;}
